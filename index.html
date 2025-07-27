@@ -18,6 +18,12 @@
 
   <form id="visit-form">
     <div class="section">
+      <h3>Patient Info</h3>
+      <input type="text" name="general-patient-name" placeholder="Patient Name" />
+      <input type="number" name="general-patient-age" placeholder="Age" />
+    </div>
+
+    <div class="section">
       <h3>Blood Tests</h3>
       <input type="number" name="blood-creatinine" placeholder="Creatinine (mg/dL)" step="0.01" />
       <input type="number" name="blood-egfr" placeholder="eGFR (ml/min/1.73m²)" step="0.1" />
@@ -65,10 +71,10 @@
 
   <div class="section">
     <button id="print-button">Download PDF</button>
-    <div id="pdf-content">
+    <div id="pdf-content" style="display: none;">
       <h2>NephroCare Diagnosis Report</h2>
-      <div id="diagnosis-output"></div>
-      <div id="medicine-output"></div>
+      <div id="pdf-diagnosis-output"></div>
+      <div id="pdf-medicine-output"></div>
     </div>
   </div>
 
